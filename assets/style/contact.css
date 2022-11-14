@@ -1,0 +1,272 @@
+html {
+    --dark-blue: #55878d;
+    --light-blue: #8cbec3;
+    --yellow: #F8ECCD;
+    --green: #b7cb9d;
+    --black: #363636;
+  
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* COMPOSANTS*/
+  .button_outline {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    font-size: 18px;
+  }
+  
+  .button {
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  
+  .button_sm {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .button_md {
+    width: 130px;
+    height: 50px;
+  }
+  
+  .button_lg {
+    width: 200px;
+    height: 70px;
+  }
+  
+  .container_sm {
+    padding: 100px 150px;
+  }
+  
+  .container_md {}
+  
+  .container_lg {}
+  
+  
+  
+  /* NAVBAR */
+  
+  
+  .navbar_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    width: 100%;
+  }
+  
+  .navbar_mobile>nav> {
+    display: none;
+  }
+  
+  .nav_right>img {
+    width: 50px;
+  }
+  
+  .navbar_mobile>nav>ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_center{
+    display: block;
+  }
+  
+  #banner-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .nav_left {
+    min-width: 100px;
+  }
+  
+  .nav_right {
+    min-width: 100px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  nav>ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav>ul>li>a {
+    font-size: 17px;
+    color: var(--dark-blue);
+    font-weight: 700;
+  }
+  
+  #main_logo {
+    width: 100px;
+  }
+  
+  
+  
+  .social_network {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social_icon {
+    display: flex;
+  }
+  
+  .active::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    left: -50%;
+  
+  }
+  
+  .sticky {
+    background-color: var(--yellow);
+    position: fixed;
+    width: 100%;
+  
+  }
+/* CONTACT */
+.contact {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form_contact {}
+
+.form_row {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.input_md {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+
+input,
+select,
+textarea {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.form_row_full {
+    justify-self: stretch;
+    margin-bottom: 50px;
+}
+
+.form_contact h4 {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+.footer_left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #55878D;
+    width: 50%;
+    padding: 50px 50px;
+    gap: 20px
+}
+
+.footer_left img {
+    width: 20%;
+}
+
+.footer_left h2 {
+    color: #D4E1E2;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.footer_left_container p {
+    margin-left: 50px;
+}
+
+.footer_left_social_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_left_social_link>a>img {
+    width: 30px;
+}
+
+.footer_right {
+    background-color: #D4E1E2;
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    padding: 50px 100px;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #F8ECCD;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+
+}
